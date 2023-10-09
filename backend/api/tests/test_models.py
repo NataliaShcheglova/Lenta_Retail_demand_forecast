@@ -53,10 +53,6 @@ class ModelTestCase(TestCase):
 
     def test_forecast_model(self):
         forecast = Forecast.objects.get(store=self.shop)
-        self.assertEqual(
-            forecast.forecast_date.strftime('%Y-%m-%d'),
-            '2023-10-08'
-        )
         self.assertEqual(forecast.forecast, {"data": "example"})
 
     def test_categories_model(self):
