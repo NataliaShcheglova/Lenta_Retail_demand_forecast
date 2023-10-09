@@ -8,7 +8,7 @@ services:
       - .env
 
   backend:
-    image: ivanmatveev/lenta_project:latest
+    image: ivanmatveev/lenta_backend:latest
     build:
       context: ./backend/
       dockerfile: Dockerfile
@@ -21,7 +21,7 @@ services:
       - .env
 
   frontend:
-    image: ivanmatveev/lenta_project:latest
+    image: ivanmatveev/lenta_frontend:latest
     build:
       context: ./frontend/
       dockerfile: Dockerfile
@@ -31,7 +31,7 @@ services:
       - backend
 
   data_science:
-    image: ivanmatveev/lenta_project:latest
+    image: ivanmatveev/lenta_data_science:latest
     build:
       context: ./backend/
       dockerfile: Dockerfile
