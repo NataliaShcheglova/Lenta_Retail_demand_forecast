@@ -2,7 +2,7 @@ import csv
 
 from django.core.management.base import BaseCommand
 
-from recipes.models import Forecast
+from api.models import Forecast
 
 
 class Command(BaseCommand):
