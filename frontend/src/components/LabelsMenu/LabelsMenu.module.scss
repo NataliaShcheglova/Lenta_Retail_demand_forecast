@@ -1,0 +1,80 @@
+@import '../../utils/variables.scss';
+
+.container {
+  display: flex;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.83vw;
+  position: relative;
+  width: 76.97vw;
+}
+
+.labels {
+  display: flex;
+  gap: 0.83vw;
+  max-width: 71.77vw;
+  min-height: 3.51vh;
+  overflow-x: hidden;
+}
+
+.label {
+  @include font-buttons;
+  background-color: white;
+  color: $main-blue;
+  padding: 0.74vh 0.83vw;
+  justify-content: center;
+  border-radius: 24px;
+  border: 1px solid #b4c8ff;
+  display: flex;
+  align-items: center;
+  gap: 0.74vh;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.label:hover {
+  background-color: rgba(180, 200, 255, 1);
+}
+
+.text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.deleteImg {
+  margin: 0;
+  padding: 0;
+  width: 0.52vw;
+  height: 0.52vw;
+}
+
+.more {
+  margin: 0 0.83vw 0 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.moreImg {
+  margin: 0;
+  padding: 0;
+  width: 1.04vw;
+  height: 1.04vw;
+}
+
+.box {
+  position: absolute;
+  top: 2.29vw;
+  display: flex;
+  max-width: 74.63vw;
+  padding: 1.25vw;
+  gap: 1.38vh 0.83vw;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  box-shadow: 2px 2px 16px 0px rgba(0, 61, 150, 0.16);
+  z-index: 100;
+  background-color: $white;
+}

@@ -1,0 +1,47 @@
+@import '../../utils/variables.scss';
+
+.wrapper {
+  display: flex;
+  padding: 2.5vw 2.08vw 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin: 0;
+}
+
+.image {
+  position: absolute;
+  top: -3.85vw;
+  left: 39.42vw;
+}
+
+.content {
+  margin: 7.08vw 0 0.83px 7.29vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.96vh;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  width: 39.53vw;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  width: 39.53vw;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}

@@ -1,0 +1,34 @@
+@import '../../../utils/variables.scss';
+
+.button {
+  padding: 1.48vh 1.25vw;
+  display: flex;
+  gap: 0.42vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+
+  &_white {
+    color: $main-blue;
+    background-color: $white;
+  }
+
+  &_blue {
+    color: $white;
+    background-color: $main-blue;
+  }
+
+  &_bordered {
+    color: $main-blue;
+    background-color: $white;
+    border: 0.05vw solid $main-blue;
+  }
+
+  &__text {
+    @include font-buttons;
+    @extend %zero-spaces;
+  }
+
+  // &__icon
+}

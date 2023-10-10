@@ -1,0 +1,38 @@
+@import '../../../utils/variables.scss';
+
+.button {
+  padding: 1.48vh 1.25vw;
+  display: flex;
+  justify-content: center;
+  gap: 0.42vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  color: $white;
+  background-color: $main-blue;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.text {
+  @extend %zero-spaces;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.222%;
+}
+
+.button:hover {
+  background-color: rgba(180, 200, 255, 1);
+}
+
+.button:focus {
+  background-color: rgba(0, 31, 99, 1);
+}
+
+.button:disabled {
+  background-color: rgba(191, 191, 191, 1);
+}
+

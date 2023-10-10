@@ -1,0 +1,34 @@
+@import '../../utils/variables.scss';
+
+.backButton {
+  background-color: $white;
+  border-radius: 12px;
+  color: $main-blue;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  height: 5.18vh;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.backButton:hover {
+  color: rgba(180, 200, 255, 1);
+}
+
+.backButton:focus {
+  color: rgba(0, 31, 99, 1);
+}
+
+.backButton:disabled {
+  color: rgba(191, 191, 191, 1);
+}
+
+.chart {
+  margin: 0;
+}

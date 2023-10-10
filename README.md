@@ -90,7 +90,7 @@ docker-compose exec backend python manage.py createsuperuser
 ```
 docker-compose down
 ```
-Остановить работу все:
+Остановить работу:
 ```
 docker-compose down
 ```
@@ -119,18 +119,28 @@ http://127.0.0.1:8000/swagger/
 - PostgreSQL - https://www.postgresql.org/
 
 ## Авторы проекта
-### backend developers:
-https://github.com/Ivanmatv - Иван Матвеев
+> Фронтенд-разработчики
 
-https://github.com/Masha-Starikova - Мария Старикова
+- [Елизавета Циприс](https://github.com/dumisel)
+- [Дарья Лазарчук](https://github.com/dashalalala24)
 
-### frontend developers:
+> Бэкэнд-разработчики
 
-### designers:
+- [Иван Матвеев](https://github.com/Ivanmatv)
+- [Мария Старикова ](https://github.com/Ivanmatv)
 
-### data science:
-https://github.com/NataliaShcheglova - Наталья Щеглова
+> Дата-аналитики
 
-https://github.com/Danspers - Данила Солтык
+- [Артем Скребцов](https://github.com/Skrebcov)
+- [Данила Солтык](https://github.com/Danspers)
+- [Наталья Щеглова](https://github.com/NataliaShcheglova)
 
-https://github.com/Skrebcov - Артём Скребцов
+> Дизайнеры
+
+- Кира Байгулова
+- Елизавета Пикина
+- Илья Болонин
+
+> Проджект-менеджер
+
+- Анастасия Баталова

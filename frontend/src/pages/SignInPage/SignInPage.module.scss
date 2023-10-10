@@ -1,0 +1,90 @@
+@import '../../utils/variables.scss';
+
+.signIn {
+  @include flex(column, flex-start, center);
+  min-height: calc(100vh - $headerHeight);
+  background-image: url(../../images/signin_pic.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 47.3%;
+
+  &__title {
+    @extend %zero-spaces;
+    @include font-headers;
+    padding: 5.93vh 0 2.22vh;
+  }
+
+  &__form {
+    @include flex(column, flex-start, center);
+    max-width: 17.5vw;
+    width: 100%;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    margin-top: 1.85vh;
+  }
+
+  &__input {
+    border-radius: 12px;
+    border: 0.05vw solid $black;
+    padding: 0.625vw;
+    box-sizing: border-box;
+    width: 100%;
+    @include font-buttons;
+
+    &:invalid {
+      color: $red;
+      border: 0.05vw solid $red;
+    }
+
+    &::placeholder {
+      color: $light-grey;
+    }
+  }
+
+  &__error {
+    @include font-small-text;
+    color: $red;
+    padding: 0.74vh 0 0 0.625vw;
+  }
+
+  &__showPassword {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0.625vw;
+    top: 0.625vw;
+    padding: 0.625vw;
+    @include icon($iconSizeS, '../../images/eye.svg');
+  }
+
+  &__button {
+    margin: 2.96vh 0 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    background-color: $main-blue;
+    @include font-buttons;
+    border-radius: 12px;
+    padding: 1.2vh 0.458vw;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
+
+    &:disabled {
+      background-color: $light-grey;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../utils/variables.scss';
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20vh 23.12vw 0 20.26vw;
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  background-color: $white;
+  border: none;
+  position: relative;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  color: $white;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.222%;
+}
+
+.legend {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: -120px;
+  left: 0;
+  background-color: $white;
+  gap: 24px;
+}
+
+.legendBlock {
+  max-width: 10.62vw;
+  display: flex;
+  padding: 1.86vh 1.45vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  z-index: 99;
+}
+
+.textBold {
+  @include font-filter-headings;
+}
+
+.tooltip {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: $black;
+  border-radius: 8px;
+  background: var(--table-line-color-40, rgba(227, 234, 255, 0.4));
+}
+
+.tooltipText {
+  margin: 0;
+  padding: 0;
+}

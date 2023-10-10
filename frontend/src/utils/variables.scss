@@ -1,0 +1,101 @@
+// colors
+$white: #ffffff;
+$black: #2c2a29;
+
+$dark-grey: #6e6e6e;
+$light-grey: #bfbfbf;
+
+$dark-blue: #001f63;
+$main-blue: #003d96;
+$blue: #b4c8ff;
+$light-blue: rgba(182, 202, 255, 0.4);
+$bluish: rgba(227, 234, 255, 0.4);
+
+$red: #ff0707;
+
+// typographic
+$fontFamily: 'Gilroy', 'Arial', sans-serif;
+
+$fontWeightRegular: 400;
+$fontWeightSemibold: 600;
+
+$fontSizeL: 1.15vw; // 22px
+$fontSizeM: 0.9375vw; // 18px
+$fontSizeS: 0.84vw; // 16px
+$fontSizeXS: 0.73vw; // 14px
+
+$lineHeight: 137.5%;
+
+@mixin text($font-size, $font-weight: $fontWeightRegular, $line-height: $lineHeight, $font-family: $fontFamily) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-family: $fontFamily;
+}
+
+@mixin font-headers {
+  @include text($fontSizeL, $fontWeightSemibold);
+}
+
+@mixin font-tabs {
+  @include text($fontSizeL);
+}
+
+@mixin font-filter-headings {
+  @include text($fontSizeM, $fontWeightSemibold);
+}
+
+@mixin font-buttons {
+  @include text($fontSizeM);
+}
+
+@mixin font-main-text {
+  @include text($fontSizeS);
+}
+
+@mixin font-small-text {
+  @include text($fontSizeXS);
+}
+
+// heights&widths
+$headerHeight: calc(4.44vh + 2.7vw);
+$sidebarWidth: 14.27vw;
+
+// icons
+$iconSizeL: 1.67vw; // 32px
+$iconSizeM: 1.25vw; // 24px
+$iconSizeS: 1.04vw; // 20px
+$iconSizeXS: 0.52vw; // 10px
+
+@mixin icon($size, $path) {
+  width: $size;
+  height: $size;
+  background-image: url($path);
+  background-position: center;
+  background-size: contain;
+  background-color: inherit;
+  background-repeat: no-repeat;
+}
+
+// flex
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// animation buttons
+%hover {
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+//margin
+%zero-spaces {
+  margin: 0;
+  padding: 0;
+}

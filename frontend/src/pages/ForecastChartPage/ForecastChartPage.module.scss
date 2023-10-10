@@ -1,0 +1,123 @@
+@import '../../utils/variables.scss';
+
+.forecastChart {
+  padding: 4.44vh 1.67vw 0;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 0 0 1.67vw;
+  max-width: calc(100vw - $sidebarWidth - 1.67vw * 2);
+  overflow: hidden;
+}
+
+.controls {
+  @include flex(center);
+  padding: 3.7vh 0 2.22vh;
+  justify-content: end;
+  margin: 7.69vh 0 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.83vw;
+}
+
+.button {
+  padding: 1.48vh 1.25vw;
+  display: flex;
+  gap: 0.42vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+
+  &_print {
+    color: $main-blue;
+    background-color: $white;
+    border: 0.05vw solid $main-blue;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $light-blue;
+      border: 0.05vw solid $light-blue;
+    }
+
+    &:active {
+      color: $dark-blue;
+      background-color: $white;
+      border: 0.05vw solid $dark-blue;
+    }
+
+    &:disabled {
+      color: $blue;
+      border: 0.05vw solid $blue;
+
+      &:hover {
+        background-color: $white;
+        border: 0.05vw solid $blue;
+      }
+    }
+  }
+
+  &_excel {
+    color: $white;
+    background-color: $main-blue;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $blue;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
+  }
+
+  &:active &__icon_print {
+    background-color: $dark-blue;
+  }
+
+  &:disabled &__icon_print {
+    background-color: $light-blue;
+  }
+
+  &__text {
+    @include font-buttons;
+    @extend %zero-spaces;
+  }
+
+  &__icon {
+    transition: background-color 0.3s;
+
+    &_excel {
+      margin: 0.1vw;
+      width: 1.04vw;
+      height: 1.04vw;
+      mask: url('../../images/download.svg') no-repeat 100% 100%;
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      -webkit-mask: url('../../images/download.svg') no-repeat 100% 100%;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      background-color: $white;
+    }
+
+    &_print {
+      width: 1.25vw;
+      height: 1.25vw;
+      mask: url('../../images/print.svg') no-repeat 100% 100%;
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      -webkit-mask: url('../../images/print.svg') no-repeat 100% 100%;
+      -webkit-mask-position: center;
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      background-color: $main-blue;
+    }
+  }
+}

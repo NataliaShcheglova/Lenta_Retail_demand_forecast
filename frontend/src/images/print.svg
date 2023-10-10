@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="printer">
+<path id="Vector" d="M6 9V2H18V9" stroke="#003D96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6.00049 18H4.00049C3.47006 18 2.96135 17.7893 2.58627 17.4142C2.2112 17.0391 2.00049 16.5304 2.00049 16V11C2.00049 10.4696 2.2112 9.96086 2.58627 9.58579C2.96135 9.21071 3.47006 9 4.00049 9H20.0005C20.5309 9 21.0396 9.21071 21.4147 9.58579C21.7898 9.96086 22.0005 10.4696 22.0005 11V16C22.0005 16.5304 21.7898 17.0391 21.4147 17.4142C21.0396 17.7893 20.5309 18 20.0005 18H18.0005" stroke="#003D96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18 14H6V22H18V14Z" stroke="#003D96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,80 @@
+@import '../../utils/variables';
+
+.header {
+  @include flex(row, space-between, center);
+  @include font-main-text;
+  background-color: $main-blue;
+  color: $white;
+  padding: 2.22vh 2.08vw;
+  box-sizing: border-box;
+  height: $headerHeight;
+
+  &__logo {
+    width: 10.83vw;
+    height: 2.7vw;
+  }
+
+  &__container {
+    gap: 1.04vw;
+    @include flex($align: center);
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 0.42vw;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__filterIcon {
+    @include icon($iconSizeL, '../../images/filter.svg');
+  }
+
+  &__filterText {
+    @extend %zero-spaces;
+  }
+
+  &__user {
+    gap: 0.83vw;
+    @include flex($align: center);
+  }
+
+  &__userpic {
+    align-self: center;
+    border-radius: 42px;
+    width: 2.1875vw;
+    height: 2.1875vw;
+    object-fit: cover;
+  }
+
+  &__username {
+    @extend %zero-spaces;
+  }
+
+  &__logout {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 1.67vw;
+    height: 1.67vw;
+    mask: url('../../images/sign_out.svg') no-repeat 100% 100%;
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask: url('../../images/sign_out.svg') no-repeat 100% 100%;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    background-color: $white;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

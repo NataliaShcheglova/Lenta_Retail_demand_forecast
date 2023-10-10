@@ -1,0 +1,16 @@
+@import '../../utils/variables';
+
+.page {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  font-family: $fontFamily;
+  color: $black;
+  background-color: $white;
+  grid-template-columns: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

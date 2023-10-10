@@ -1,0 +1,51 @@
+@import '../../utils/variables.scss';
+
+.wrapper {
+  display: flex;
+  padding: 0 2.08vw 0;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin: 0;
+}
+
+.image {
+  position: absolute;
+  top: -3.85vw;
+  left: 39.42vw;
+}
+
+.title {
+  margin: 0 0 1.66vw 7.29vw;
+  padding: 0;
+  width: 39.53vw;
+  color: #000;
+  font-family: $fontFamily;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text {
+  margin: 0 0 0.83vw 7.29vw;
+  padding: 0;
+  width: 39.53vw;
+  color: #000;
+  font-family: $fontFamily;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+
+.link {
+  compose: text;
+  color: $main-blue;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+}

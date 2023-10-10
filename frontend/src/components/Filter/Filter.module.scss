@@ -1,0 +1,192 @@
+@import '../../utils/variables.scss';
+
+.filter {
+  display: flex;
+  min-width: 17.18vw;
+  padding: 1.66vw 1.45vw;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid $light-grey;
+  overflow-y: scroll;
+  // margin: 0 1.66vw 0 0;
+  height: min-content;
+}
+
+.subtitleWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 0 1.48vh;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.button {
+  padding: 0 0 0.47vh 0;
+  margin: 0;
+  color: $main-blue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: start;
+  transition: color 0.3s;
+}
+
+.button:hover {
+  color: rgba(180, 200, 255, 1);
+}
+
+.button:focus {
+  color: rgba(0, 31, 99, 1);
+}
+
+.button:disabled {
+  color: rgba(191, 191, 191, 1);
+}
+
+.arrow {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  text-transform: capitalize;
+}
+
+.listMargin {
+  margin: 1.85vh 0 0 0.41vw;
+  width: calc(100% - 4px);
+}
+
+.listScroll {
+  overflow-y: scroll;
+  max-height: 204px;
+  border: none;
+}
+
+.listScroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(182, 202, 255, 0.4);
+}
+
+.listScroll::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 100px;
+  border-radius: 4px;
+  background: $main-blue;
+}
+
+.dropdown {
+  padding-left: 1.87vw;
+  margin: 0 0 1.85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 10.31vw;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dropdownActive {
+  color: $main-blue;
+}
+
+.dropdown input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25vw;
+  width: 1.25vw;
+  background-image: url(../../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown input:hover ~ .checkmark {
+  background-image: url(../../images/pressed.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown input:checked ~ .checkmark {
+  background-image: url(../../images/checked.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.dropdown input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.caret {
+  transform: rotate(0deg);
+  transition: transform 0.4s ease;
+  margin: 0 0 0 0.83vw;
+  height: 1.25vw;
+  width: 1.25vw;
+}
+
+.caretActive {
+  transform: rotate(180deg);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.line {
+  margin: 1.48vh 0 2.22vh;
+  min-width: 14.27vw;
+  height: 1px;
+  background: $light-grey;
+}
