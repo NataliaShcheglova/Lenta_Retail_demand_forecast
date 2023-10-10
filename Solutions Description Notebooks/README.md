@@ -8,6 +8,7 @@
 
 Перед запуском ноутбуков необходимо скачать датасеты из папки [datasets](https://github.com/Danspers/Lenta-time-series/blob/main/Solutions%20Description%20Notebooks/datasets).
 
+`submission_predictions_only.csv` - файл с предсказаниями модели CatBoot для sales_submission выборки. 
 
 ## Описание 
 
