@@ -86,12 +86,6 @@ docker-compose exec backend python manage.py migrate
 docker-compose exec backend python manage.py createsuperuser
 ```
 
-Наполните базу данных ингредиентами и тегами. Выполняйте команду из дериктории где находится файл manage.py:
-```
-python manage.py load_csv_data
-
-```
-
 Остановить работу всех контейнеров командой:
 ```
 docker-compose down

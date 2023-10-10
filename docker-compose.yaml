@@ -20,15 +20,15 @@ services:
     env_file:
       - .env
 
-  frontend:
-    image: ivanmatveev/lenta_frontend:latest
-    build:
-      context: ./frontend/
-      dockerfile: Dockerfile
-    # volumes:
-    #   - ../frontend/:/app/result_build/
-    depends_on:
-      - backend
+  # frontend:
+  #   image: ivanmatveev/lenta_frontend:latest
+  #   build:
+  #     context: ./frontend/
+  #     dockerfile: Dockerfile
+  #   # volumes:
+  #   #   - ../frontend/:/app/result_build/
+  #   depends_on:
+  #     - backend
 
   data_science:
     image: ivanmatveev/lenta_data_science:latest
