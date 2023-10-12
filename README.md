@@ -1,8 +1,8 @@
-# Хакатон "Лента х Практикум". Команда "5-ый элемент".
-
-**Краткое описание:** Команда Мастерской Яндекс Практикума и команда Ленты подготовили хакатон, в рамках которого команды создают интерфейс и предсказательную модель по прогнозированию спроса на товары заказчика собственного производства (гранулярность ТК-SKU-День). Это общие репозиторий в котором собран результат работы всех членов команды "5-ый элемент".
+# Хакатон "Лента х Практикум". Команда "5 элемент"
 
 **✨ [Ссылка на gh-pages](https://dumisel.github.io/lenta/#/) ✨**
+
+**Краткое описание:** Команда Мастерской Яндекс Практикума и команда Ленты подготовили хакатон, в рамках которого команды создают интерфейс и предсказательную модель по прогнозированию спроса на товары заказчика собственного производства (гранулярность ТК-SKU-День). Это общие репозиторий в котором собран результат работы всех членов команды "5-ый элемент".
 
 **Цель:**
 Сгенерировать различные признаки и придумать интерпретируемую, описывающую правильные
@@ -13,6 +13,10 @@
 есть пропущенные значения и по каким-то товарам не предоставлен прогноз, прогноз считается
 равным нулю.
 
+[data_description.pdf](https://github.com/Danspers/Lenta-time-series/blob/main/data_description.pdf) - описание данных
+
+[tasks_description.pdf](https://github.com/Danspers/Lenta-time-series/blob/main/tasks_description.pdf) - описание задачи
+
 ## Установка:
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -21,60 +25,60 @@ git clone https://github.com/Danspers/Lenta-time-series.git && cd Lenta-time-ser
 ```
 Клонировать и установить виртуальное окружение:
 - для MacOS
-```
+```shell
 python3 -m venv venv
 source venv/bin/activate
 ```
 - для Windows
-```
+```shell
 python -m venv venv
 source venv/Scripts/activate
 ```
 Установить зависимости:
-```
+```shell
 cd backend && pip install -r requirements.txt
 ```
 
 В папке с файлом manage.py применить миграции:
-```
+```shell
 python manage.py makemigrations
 ```
-```
+```shell
 python manage.py migrate
 ```
 
 Создание админа:
-```
+```shell
 python manage.py createsuperuser
 ```
 
 Выполните команду для запуска локально:
-```
+```shell
 python manage.py runserver
 ```
 
 Запуск тестов:
-```
+```shell
 python manage.py test
 ```
 
 Запустить все контейнеры:
-```
+```shell
 docker-compose up -d --build
 ```
 
 Выполнить миграции:
-``` 
+```shell
 docker-compose exec backend python manage.py migrate 
 ```
 
 Создать суперпользователя:
-```
+```shell
 docker-compose exec backend python manage.py createsuperuser
 ```
 
 Остановить работу всех контейнеров командой:
-```
+```shell
 docker-compose down
 ```
 
