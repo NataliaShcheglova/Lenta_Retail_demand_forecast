@@ -1,6 +1,6 @@
 ## Решение Data Science
 
-**Перечень Juputer ноутбуков:** 
+**Перечень Jupyter ноутбуков:** 
 1. Исследовательский анализ данных ([EDA](https://github.com/Danspers/Lenta-time-series/blob/main/Solutions%20Description%20Notebooks/1.Lenta_time_series_EDA_(General).ipynb))
 2. Создание и тестирование модели [CatBoostRegressor](https://github.com/Danspers/Lenta-time-series/blob/main/Solutions%20Description%20Notebooks/2.Lenta_time_series_CatBoost_(Shcheglova_Natalia).ipynb) с кросс-валидацией и подбором гиперпараметров с `optuna` для топ-50 товаров
 3. Создание и тестирование модели [Arima](https://github.com/Danspers/Lenta-time-series/blob/main/Solutions%20Description%20Notebooks/3.Lenta_time_series_Arima_(Skrebcov_Artem).ipynb) для каждой пары товар-магазин для топ-25 товаров
